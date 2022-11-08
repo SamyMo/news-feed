@@ -12,8 +12,8 @@ Things you may want to cover:
   
 
 * Configuration
-  gem "font-awesome-sass", "~> 6.2.0"
-  gem "bootstrap", "~> 5.2.2"
+  gem "font-awesome-sass", "~> 6.2.0",
+  gem "bootstrap", "~> 5.2.2",
 
 * Database creation
 
