@@ -3,11 +3,12 @@ class PagesController < ApplicationController
 
   end
 
-  def about
+  def sports
 
   end
 
-  def contact
+  def politique
+
 
   end
 end

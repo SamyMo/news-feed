@@ -1,0 +1,25 @@
+
+.container {
+  background-image: url(https://picsum.photos/200/300);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  border: 2px dashed #333;
+  background-size: contain;
+  }
+
+a:-webkit-any-link {
+  display: inline-block;
+  // flex-direction: row;
+  justify-content: flex-end;
+  // position: relative;
+  // left: 800px;
+}
+// http://www.uwbrandingiron.com/wp-content/uploads/2014/12/newspaper-texture.jpg
+
+div.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
