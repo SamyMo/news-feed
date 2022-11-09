@@ -20,6 +20,7 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+gem "newsapi"
 
 * Services (job queues, cache servers, search engines, etc.)
 
