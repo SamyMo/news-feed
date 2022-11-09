@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "pages#home"
-  get "about", to: "pages#about"
-  get "contact", to: "pages#contact"
+  get "economie", to: "pages#economie"
+  get "sports", to: "pages#sports"
+  # get https://newsapi.org/v2/top-headlines?country=fr&country=business&apiKey=da39ecad288a4d8782dd37d3771880fa
   # root "articles#index"
 end
