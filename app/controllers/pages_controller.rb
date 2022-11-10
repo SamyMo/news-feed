@@ -19,6 +19,16 @@ class PagesController < ApplicationController
     end
   end
 
+  # change to accept all caps
+  # @country = country
+  @headlines = find_headlines(@country['capital'], @country['alpha2Code'])
+
+  def find_country(country_code)
+    query = URI.encode("#{country_code}")
+    request_api(
+      "https://newsapi.org/v2/top-headlines?q=#{query}"
+    )
+  end
 
 private
 
