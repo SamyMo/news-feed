@@ -7,6 +7,7 @@ gem "font-awesome-sass", "~> 6.2.0"
 gem "bootstrap", "~> 5.2.2"
 
 gem "news-api"
+gem 'excon'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
