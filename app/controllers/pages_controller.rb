@@ -7,7 +7,7 @@ class PagesController < ApplicationController
 
   end
 
-  def politique
+  def economie
 
   end
 
@@ -27,6 +27,7 @@ class PagesController < ApplicationController
     query = URI.encode("#{country_code}")
     request_api(
       "https://newsapi.org/v2/top-headlines?q=#{query}"
+      # "https://newsapi.org/v2/top-headlines?country?&category?apiKey=da39ecad288a4d8782dd37d3771880fa"
     )
   end
 
@@ -43,7 +44,8 @@ private
     return nil if response.status != 200
     JSON.parse(response.body)
   end
-  
+
+
   def find_country(name)
     request_api(
       "https://newsapi.org/v2/top-headlines?&/#{URI.encode(name)}"
