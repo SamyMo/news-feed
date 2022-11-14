@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "economie", to: "pages#economie"
   get "sports", to: "pages#sports"
-  get "home" => 'pages#search'
+  get "home" => "pages#search"
 end
 
 

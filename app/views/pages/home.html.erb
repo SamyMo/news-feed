@@ -9,34 +9,19 @@
 <%# <% http://clemi.ac-dijon.fr/wp-content/uploads/2016/09/Papier_Journal_papillon-1038x576.jpg') %>
 
 
-
+<%#
 <div class="container">
   <div class="row">
     <div class="col-lg-12 mt-5">
     <% if flash[:alert] %>
-        <div class="alert alert-warning"><%= flash[:alert] %></div>
+        <%# <div class="alert alert-warning"><%= flash[:alert]</div>
       <% end %>
-      <div class="mx-auto mt-5" style="width: 400px">
-        <%= form_with(url: search_path, method: 'get', local: true) do %>
-          <div class="form-group">
-            <%= label_tag :country, 'Search for a country '%>
-            <%= text_field_tag :country, nil, placeholder: 'fr', class: 'form-control' %>
-          </div>
-          <%= button_tag 'Search', class: 'btn btn-success btn-block' %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<%= fetch("https://newsapi.org/v2/top-headlines?&apiKey=da39ecad288a4d8782dd37d3771880fa")
- .then(response => response.json())
- .then((data) => {
-    console.log(country)
-  }) %>
-
-
-   <%= <ul id="results"></ul> %>
- <%= const results = document.querySelector("#results") %>
+      <%# <div class="mx-auto mt-5" style="width: 400px">
+        <%= form_with(url: search_path, method: 'get', local: true) do
+          <div class="form-group"> %>
+            <%# <%= label_tag :country, 'Search for a country' %>
+            <%# <%= text_field_tag :country, nil, placeholder: 'fr', class: 'form-control' %>
+          <%# </div>
+         <%= button_tag 'Search', class: 'btn btn-success btn-block' %> 
+        <%# <% end %>
+      <%# </div> %>

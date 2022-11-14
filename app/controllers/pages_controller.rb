@@ -27,7 +27,6 @@ class PagesController < ApplicationController
     query = URI.encode("#{country_code}")
     request_api(
       "https://newsapi.org/v2/top-headlines?q=#{query}"
-      # "https://newsapi.org/v2/top-headlines?country?&category?apiKey=da39ecad288a4d8782dd37d3771880fa"
     )
   end
 
