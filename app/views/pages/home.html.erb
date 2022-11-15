@@ -22,6 +22,29 @@
             <%# <%= label_tag :country, 'Search for a country' %>
             <%# <%= text_field_tag :country, nil, placeholder: 'fr', class: 'form-control' %>
           <%# </div>
-         <%= button_tag 'Search', class: 'btn btn-success btn-block' %> 
+         <%= button_tag 'Search', class: 'btn btn-success btn-block' %>
         <%# <% end %>
       <%# </div> %>
+
+<% function showDatas(data) {
+   data.map(function(author, title) {
+   document
+      .querySelector("")
+      .insertAdjacentHTML("beforebegin","<div id='"+author"'>"
+      +"<p>Image :<img src='"+produit.imageUrl+"' alt='image_produit' /></p>"
+      +"<p>Lenses :"+produit.lenses.join(" , ")+"</p>"
+      +"<p>Name :"+produit.name+"</p>"
+      +"<p>Price :"+produit.price+"</p>"
+      +"</div>");
+  });
+}
+%>
+
+
+<input type="button" value="APPEL NEWS API"  onclick="buttonClickGET()"  />
+<p id="zone_info">toto</p>
+
+let callBackGetSuccess = function(data) {
+    let element = document.getElementById("zone_info");
+    element.innerHTML = "Le titre est de " + ;
+}
